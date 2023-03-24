@@ -62,3 +62,62 @@
 .search__container--input::placeholder{
     color: #ffffff7a;
 }
+
+/* result part */
+
+.result__container{
+    z-index: 3;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 60%;
+    margin-top: 16vh;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.place__image{
+    display: inline-block;
+    align-self: flex-end;
+    scale: 1.6;
+    opacity: .7;
+    animation: iconAnimation 6s infinite linear alternate;
+}
+
+@keyframes iconAnimation {
+    0%{
+        translate: 0;
+    }
+    100%{
+        translate: 0 -20px;
+    }
+}
+
+.place__name, .place__pressure, .place__humidity, .place__temp, .place__windSpeed{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.place__name{
+    text-transform: capitalize;
+    font-size: 10vw;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.place__pressure, .place__humidity, .place__temp, .place__windSpeed{
+    margin-bottom: 10px;
+}
+
+/* loader */
+
+.spinner__loader{
+    background: green;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
