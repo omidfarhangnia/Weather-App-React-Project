@@ -115,9 +115,18 @@
 
 /* loader */
 
-.spinner__loader{
-    background: green;
+.loader{
+    width: 100vw;
+    height: 100vh;
     position: relative;
     z-index: 2;
-    display: block;
+    display: grid;
+    place-items: center;
+}
+
+.loader img{
+    opacity: .5;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
 }
