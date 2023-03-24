@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundDiv{
+    background-image: url('../public/earth-image.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+}
+
+.image__overlay{
+    position: absolute;
+    inset: 0 0 0 0;
+    background: black;
+    z-index: 1;
+    opacity: .4;
+}
+
+.search__container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 4vh;
+}
+
+.search__container--form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    border: 3px solid rgba(255, 254, 254, 0.4);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.search__container button{
+    all: unset;
+}
+.search__container svg{
+    fill: #ffffff;
+}
+
+.search__container--input{
+    all: unset;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.search__container--input::placeholder{
+    color: #ffffff7a;
+}
